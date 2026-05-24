@@ -1,99 +1,72 @@
 body {
-  background-color: MidnightBlue;
-  color: whitesmoke;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #1b1b32;
+  color: #f5f6f7;
+  font-family: Tahoma;
+  font-size: 16px;
 }
 
-.container {
-    background-color: #ffffff1a;
-    width: 80%;
-    max-width: 600px;
-    border-radius: 10px;
-    margin: 20px auto;
-    padding: 10px 20px;
-    box-shadow: 0 5px 15px black;  
-}
-
-.center {
+h1, p {
+  margin: 1em auto;
   text-align: center;
 }
 
-.description {
-  font-size: 1.2rem;
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom:2em;
 }
 
 fieldset {
-  border: 1px solid gray;
-  border-radius: 5px;
-  margin: 20px 0;
-  padding: 20px;
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #3b3b4f;
 }
 
-fieldset legend {
-  font-size: 1.3rem;
-  font-weight: 600;
+fieldset:last-of-type {
+  border-bottom: none;
 }
 
 label {
-  font-size: 1.2rem;
-}
-
-label:not(.contact-method) {
   display: block;
-  margin: 10px 0;
-}
-
-input:not(.contact-method-radio-btn),
-textarea {
-  background-color: #ffffff1a;
-  width: 95%;
-  border: 1px solid gray;
-  border-radius: 5px;
-  padding: 10px;
+  margin: 0.5rem 0;
 }
 
 input,
-input::placeholder,
-textarea {
-  color: whitesmoke;
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
 }
 
-
-.contact-method-radio-btn {
-  appearance: none;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  border: 2px solid gray;
-  vertical-align: bottom;
+input, textarea {
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
 }
 
-.contact-method-radio-btn::before {
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
   display: block;
-  content: " ";
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  transform: translate(3px, 3px) scale(0);
-  transition: all 0.3s ease-in;
-}
-
-.contact-method-radio-btn:checked::before {
-  transform: translate(3px, 3px) scale(1);
-  background-color: lightgreen;
-}
-
-.submit-btn {
-  cursor: pointer;
-  background-color: royalblue;
-  color: whitesmoke;
-  border: none;
-  border-radius: 6px;
-  padding: 12px 20px;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
   font-size: 1.1rem;
-  display: block;
-  margin: auto;
+  background-color: #3b3b4f;
+  border-color: white;
+  min-width: 300px;
 }
 
-.submit-btn:hover{
-  background-color:midnightblue;
+input[type="file"] {
+  padding: 1px 2px;
 }
